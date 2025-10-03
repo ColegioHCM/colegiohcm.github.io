@@ -145,6 +145,7 @@ background-color:#218838;
 transform:translateY(-3px);
 box-shadow:0 5px 15px rgba(0,0,0,.3);
 }
+/* AJUSTE PARA MANTENER EL ORDEN Y EVITAR SOLAPAMIENTO EN MÓVIL */
 .text-on-bottom{
 z-index:3;
 color:white;
@@ -152,7 +153,8 @@ font-size:1.2rem;
 font-weight:700;
 text-shadow:2px 2px 4px rgba(0,0,0,.5);
 letter-spacing:2px;
-margin-bottom:15px;
+margin-bottom:15px; /* Espacio debajo del texto */
+display:block; /* Asegura que ocupe su propia línea antes del h1/p */
 }
 .section-title{
 text-align:center;
@@ -411,15 +413,24 @@ width:100%;
 .hero-section{
 height:400px;
 }
+.hero-content{ /* Ajuste para centrar mejor en vertical y dar más espacio */
+top:55%; /* Mover el contenido un poco más abajo */
+}
 .hero-content h1{
-font-size:2rem;
+font-size:2rem; /* Reducir tamaño del título */
+margin-bottom:10px;
 }
 .hero-content p{
-font-size:1rem;
+font-size:1rem; /* Reducir tamaño del subtítulo */
+margin-bottom:20px; /* Reducir margen */
 }
 .hero-content .btn-primary{
 font-size:1rem;
 padding:10px 25px;
+}
+.text-on-bottom{
+font-size:1rem; /* Reducir tamaño del texto "Educando en Familia" */
+margin-bottom:5px; /* Reducir el espacio para evitar solapamiento */
 }
 .social-icons{
 margin-top:15px;
